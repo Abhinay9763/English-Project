@@ -4,6 +4,7 @@ import Link from "next/link";
 import Leaderboard from "@/components/Leaderboard";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import Creators from "@/components/Creators";
 
 export default function Home() {
   return (
@@ -112,6 +113,7 @@ export default function Home() {
             <Leaderboard />
           </div>
         </div>
+        <Creators />
         <Footer />
       </div>
     </main>
