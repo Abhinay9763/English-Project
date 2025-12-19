@@ -7,6 +7,7 @@ export default function LoginModal() {
     const { user, login } = useUser();
     const [name, setName] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
     if (user) return null;
 
@@ -15,8 +16,14 @@ export default function LoginModal() {
         if (!name.trim() || isSubmitting) return;
 
         setIsSubmitting(true);
-        await login(name);
-        setIsSubmitting(false);
+        setError(null);
+        try {
+            await login(name);
+        } catch (err: any) {
+            setError(err.message);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -34,11 +41,19 @@ export default function LoginModal() {
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                             Your Name
                         </label>
+                        {error && (
+                            <div className="mb-4 p-3 bg-red-500/10 border border-red-500/50 rounded-lg text-red-500 text-sm font-medium animate-shake">
+                                {error}
+                            </div>
+                        )}
                         <input
                             type="text"
                             id="name"
                             value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            onChange={(e) => {
+                                setName(e.target.value);
+                                if (error) setError(null);
+                            }}
                             className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none bg-gray-50 dark:bg-gray-800 transition-all"
                             placeholder="e.g. WordMaster"
                             required

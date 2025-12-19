@@ -40,11 +40,17 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name }),
             });
-            const userData = await response.json();
-            setUser(userData);
-            localStorage.setItem("linguadash_user", userData.name);
-        } catch (error) {
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || "Login failed");
+            }
+
+            setUser(data);
+            localStorage.setItem("linguadash_user", data.name);
+        } catch (error: any) {
             console.error("Login failed:", error);
+            throw error;
         }
     };
 
