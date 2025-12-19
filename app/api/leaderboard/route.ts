@@ -1,22 +1,17 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-const dataFilePath = path.join(process.cwd(), 'data', 'leaderboard.json');
+import { kv } from '@vercel/kv';
 
 export async function GET() {
     try {
-        let users = [];
-        if (fs.existsSync(dataFilePath)) {
-            const fileData = fs.readFileSync(dataFilePath, 'utf8');
-            users = JSON.parse(fileData);
-        }
+        // Fetch current users from KV
+        const users: any[] = await kv.get('leaderboard') || [];
 
-        // Sort by score descending
+        // Sort by score descending and take top 10
         const leaderboard = users.sort((a: any, b: any) => b.score - a.score).slice(0, 10);
 
         return NextResponse.json(leaderboard);
     } catch (error) {
+        console.error('KV Error:', error);
         return NextResponse.json({ error: 'Failed to fetch leaderboard' }, { status: 500 });
     }
 }
