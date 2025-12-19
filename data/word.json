@@ -1,0 +1,387 @@
+[
+  {
+    "word": "abide",
+    "meaning": "to accept or act in accordance with a rule, decision, or recommendation",
+    "pos": "verb",
+    "origin": "from Old English 'abidan' meaning 'remain'",
+    "example": "We must abide by the rules of the game."
+  },
+  {
+    "word": "acute",
+    "meaning": "having a sharp point; intense or severe",
+    "pos": "adjective",
+    "origin": "from Latin 'acutus' meaning 'sharp'",
+    "example": "She has an acute sense of smell."
+  },
+  {
+    "word": "adept",
+    "meaning": "very skilled or proficient at something",
+    "pos": "adjective",
+    "origin": "from Latin 'adeptus' meaning 'achieved'",
+    "example": "He is adept at solving complex problems."
+  },
+  {
+    "word": "ample",
+    "meaning": "enough or more than enough; plentiful",
+    "pos": "adjective",
+    "origin": "from Latin 'amplus' meaning 'large'",
+    "example": "There is ample time to complete the project."
+  },
+  {
+    "word": "bliss",
+    "meaning": "perfect happiness; great joy",
+    "pos": "noun",
+    "origin": "from Old English 'bliths' meaning 'happiness'",
+    "example": "The newlyweds were in a state of pure bliss."
+  },
+  {
+    "word": "brave",
+    "meaning": "ready to face and endure danger or pain; showing courage",
+    "pos": "adjective",
+    "origin": "from Italian 'bravo' meaning 'bold'",
+    "example": "The brave firefighter rescued the family from the burning building."
+  },
+  {
+    "word": "calm",
+    "meaning": "not showing or feeling nervousness, anger, or other strong emotions",
+    "pos": "adjective",
+    "origin": "from Greek 'kauma' meaning 'heat'",
+    "example": "She remained calm during the emergency."
+  },
+  {
+    "word": "dense",
+    "meaning": "closely compacted in substance; having high density",
+    "pos": "adjective",
+    "origin": "from Latin 'densus' meaning 'thick'",
+    "example": "The forest was so dense that sunlight barely reached the ground."
+  },
+  {
+    "word": "eager",
+    "meaning": "wanting to do or have something very much",
+    "pos": "adjective",
+    "origin": "from Old French 'aigre' meaning 'sharp'",
+    "example": "The students were eager to learn about the new topic."
+  },
+  {
+    "word": "fancy",
+    "meaning": "elaborate in structure or decoration; sophisticated",
+    "pos": "adjective",
+    "origin": "from Old French 'fantasie' meaning 'imagination'",
+    "example": "They held a fancy dinner party at the elegant restaurant."
+  },
+  {
+    "word": "grace",
+    "meaning": "simple elegance or refinement of movement",
+    "pos": "noun",
+    "origin": "from Latin 'gratia' meaning 'favor'",
+    "example": "The dancer moved with grace and beauty."
+  },
+  {
+    "word": "harsh",
+    "meaning": "unpleasantly rough or jarring to the senses",
+    "pos": "adjective",
+    "origin": "from Middle English 'harsk'",
+    "example": "The harsh winter weather made travel difficult."
+  },
+  {
+    "word": "ideal",
+    "meaning": "satisfying one's conception of what is perfect; most suitable",
+    "pos": "adjective",
+    "origin": "from Greek 'idea' meaning 'form'",
+    "example": "This location is ideal for a picnic."
+  },
+  {
+    "word": "jolly",
+    "meaning": "happy and cheerful",
+    "pos": "adjective",
+    "origin": "from Old French 'jolif' meaning 'merry'",
+    "example": "The jolly man spread laughter wherever he went."
+  },
+  {
+    "word": "knack",
+    "meaning": "an acquired or natural skill at performing a task",
+    "pos": "noun",
+    "origin": "from Middle English 'knak'",
+    "example": "She has a knack for learning languages quickly."
+  },
+  {
+    "word": "loyal",
+    "meaning": "giving or showing firm and constant support or allegiance",
+    "pos": "adjective",
+    "origin": "from Old French 'loial' meaning 'legal'",
+    "example": "He remained loyal to his friends through difficult times."
+  },
+  {
+    "word": "mirth",
+    "meaning": "amusement, especially as expressed in laughter",
+    "pos": "noun",
+    "origin": "from Old English 'myrgth' meaning 'joy'",
+    "example": "The comedy show filled the room with mirth and laughter."
+  },
+  {
+    "word": "noble",
+    "meaning": "belonging to a hereditary class with high social or political status; having admirable qualities",
+    "pos": "adjective",
+    "origin": "from Latin 'nobilis' meaning 'notable'",
+    "example": "She showed noble character by helping those in need."
+  },
+  {
+    "word": "overt",
+    "meaning": "done or shown openly; plainly or readily apparent",
+    "pos": "adjective",
+    "origin": "from Old French 'overt' meaning 'open'",
+    "example": "His overt criticism of the policy caused controversy."
+  },
+  {
+    "word": "pride",
+    "meaning": "a feeling of deep pleasure or satisfaction derived from achievements",
+    "pos": "noun",
+    "origin": "from Old English 'pryte'",
+    "example": "She felt great pride in her daughter's accomplishments."
+  },
+  {
+    "word": "quirk",
+    "meaning": "a peculiar aspect of a person's character or behavior",
+    "pos": "noun",
+    "origin": "unknown origin",
+    "example": "One of his quirks is that he always arranges his books by color."
+  },
+  {
+    "word": "rapid",
+    "meaning": "happening in a short time or at a fast rate",
+    "pos": "adjective",
+    "origin": "from Latin 'rapidus' meaning 'seizing'",
+    "example": "The company experienced rapid growth in its first year."
+  },
+  {
+    "word": "stark",
+    "meaning": "severe or bare in appearance or outline",
+    "pos": "adjective",
+    "origin": "from Old English 'stearc' meaning 'rigid'",
+    "example": "The stark contrast between the two paintings was striking."
+  },
+  {
+    "word": "tacit",
+    "meaning": "understood or implied without being stated",
+    "pos": "adjective",
+    "origin": "from Latin 'tacitus' meaning 'silent'",
+    "example": "There was a tacit agreement between them not to discuss the matter."
+  },
+  {
+    "word": "vague",
+    "meaning": "of uncertain, indefinite, or unclear character or meaning",
+    "pos": "adjective",
+    "origin": "from Latin 'vagus' meaning 'wandering'",
+    "example": "She gave only vague answers to our questions."
+  },
+  {
+    "word": "vital",
+    "meaning": "absolutely necessary or important; essential",
+    "pos": "adjective",
+    "origin": "from Latin 'vitalis' meaning 'of life'",
+    "example": "Water is vital for human survival."
+  },
+  {
+    "word": "wield",
+    "meaning": "to hold and use a weapon or tool",
+    "pos": "verb",
+    "origin": "from Old English 'wealdan' meaning 'to govern'",
+    "example": "The knight knew how to wield his sword skillfully."
+  },
+  {
+    "word": "witty",
+    "meaning": "showing or characterized by quick and inventive verbal humor",
+    "pos": "adjective",
+    "origin": "from Old English 'wittig' meaning 'wise'",
+    "example": "His witty remarks kept everyone entertained at the party."
+  },
+  {
+    "word": "yield",
+    "meaning": "to produce or provide a natural, agricultural, or industrial product",
+    "pos": "verb",
+    "origin": "from Old English 'gieldan' meaning 'to pay'",
+    "example": "The farm yields a good harvest every year."
+  },
+  {
+    "word": "zest",
+    "meaning": "great enthusiasm and energy",
+    "pos": "noun",
+    "origin": "from French 'zeste' meaning 'orange or lemon peel'",
+    "example": "She approached her new job with zest and determination."
+  },
+  {
+    "word": "azure",
+    "meaning": "bright blue in color, like a cloudless sky",
+    "pos": "adjective",
+    "origin": "from Persian 'lazhward' meaning 'lapis lazuli'",
+    "example": "The azure sky stretched endlessly above us."
+  },
+  {
+    "word": "blaze",
+    "meaning": "a very large or fiercely burning fire",
+    "pos": "noun",
+    "origin": "from Old English 'blaese' meaning 'torch'",
+    "example": "The firefighters worked to extinguish the blaze."
+  },
+  {
+    "word": "charm",
+    "meaning": "the power or quality of giving delight or arousing admiration",
+    "pos": "noun",
+    "origin": "from Latin 'carmen' meaning 'song'",
+    "example": "Her natural charm won over everyone at the party."
+  },
+  {
+    "word": "draft",
+    "meaning": "a preliminary version of a piece of writing",
+    "pos": "noun",
+    "origin": "from Old English 'dragan' meaning 'to draw'",
+    "example": "She wrote the first draft of her novel in just one month."
+  },
+  {
+    "word": "elite",
+    "meaning": "a select group that is superior in terms of ability or qualities",
+    "pos": "noun",
+    "origin": "from French 'élite' meaning 'selection'",
+    "example": "The elite athletes trained for years to compete in the Olympics."
+  },
+  {
+    "word": "flair",
+    "meaning": "a special or instinctive ability",
+    "pos": "noun",
+    "origin": "from French 'flair' meaning 'sense of smell'",
+    "example": "She has a natural flair for interior design."
+  },
+  {
+    "word": "gleam",
+    "meaning": "a faint or brief light, especially one reflected from something",
+    "pos": "noun",
+    "origin": "from Old English 'glaem'",
+    "example": "A gleam of hope appeared in her eyes."
+  },
+  {
+    "word": "haste",
+    "meaning": "excessive speed or urgency of movement or action",
+    "pos": "noun",
+    "origin": "from Old French 'haste'",
+    "example": "In his haste, he forgot to lock the door."
+  },
+  {
+    "word": "inert",
+    "meaning": "lacking the ability or strength to move",
+    "pos": "adjective",
+    "origin": "from Latin 'iners' meaning 'unskilled'",
+    "example": "The inert body lay motionless on the ground."
+  },
+  {
+    "word": "jaded",
+    "meaning": "tired, bored, or lacking enthusiasm, typically after having had too much of something",
+    "pos": "adjective",
+    "origin": "from 'jade' meaning 'worn-out horse'",
+    "example": "After years of traveling, she felt jaded and longed for home."
+  },
+  {
+    "word": "knead",
+    "meaning": "to work and press into a mass with the hands",
+    "pos": "verb",
+    "origin": "from Old English 'cnedan'",
+    "example": "The baker kneaded the dough until it was smooth and elastic."
+  },
+  {
+    "word": "lucid",
+    "meaning": "expressed clearly; easy to understand",
+    "pos": "adjective",
+    "origin": "from Latin 'lucidus' meaning 'bright'",
+    "example": "She gave a lucid explanation of the complex theory."
+  },
+  {
+    "word": "nudge",
+    "meaning": "to prod someone gently with one's elbow to attract attention",
+    "pos": "verb",
+    "origin": "from Middle English 'nuggen'",
+    "example": "She gave him a nudge to wake him up."
+  },
+  {
+    "word": "opine",
+    "meaning": "to hold and state as one's opinion",
+    "pos": "verb",
+    "origin": "from Latin 'opinari' meaning 'to think'",
+    "example": "Many experts opine that the economy will improve next year."
+  },
+  {
+    "word": "plume",
+    "meaning": "a long, soft feather or arrangement of feathers used by a bird for display",
+    "pos": "noun",
+    "origin": "from Latin 'pluma' meaning 'feather'",
+    "example": "The peacock's colorful plume attracted all the attention."
+  },
+  {
+    "word": "quell",
+    "meaning": "to put an end to something, typically by the use of force",
+    "pos": "verb",
+    "origin": "from Old English 'cwellan' meaning 'to kill'",
+    "example": "The police worked to quell the riot."
+  },
+  {
+    "word": "realm",
+    "meaning": "a kingdom",
+    "pos": "noun",
+    "origin": "from Old French 'reaume'",
+    "example": "The king ruled over a vast realm."
+  },
+  {
+    "word": "scorn",
+    "meaning": "the feeling or belief that someone or something is worthless or despicable",
+    "pos": "noun",
+    "origin": "from Old French 'escorner'",
+    "example": "She looked at him with scorn after he betrayed her trust."
+  },
+  {
+    "word": "trove",
+    "meaning": "a store of valuable or delightful things",
+    "pos": "noun",
+    "origin": "from French 'trouvé' meaning 'found'",
+    "example": "The library was a trove of ancient manuscripts."
+  },
+  {
+    "word": "unite",
+    "meaning": "to come or bring together for a common purpose or action",
+    "pos": "verb",
+    "origin": "from Latin 'unire' meaning 'to join'",
+    "example": "The crisis helped unite the community."
+  },
+  {
+    "word": "vivid",
+    "meaning": "producing powerful feelings or strong, clear images in the mind",
+    "pos": "adjective",
+    "origin": "from Latin 'vividus' meaning 'lively'",
+    "example": "She gave a vivid description of her travels in Japan."
+  },
+  {
+    "word": "wager",
+    "meaning": "a bet",
+    "pos": "noun",
+    "origin": "from Old French 'wagier'",
+    "example": "He placed a wager on the horse race."
+  },
+  {
+    "word": "xenon",
+    "meaning": "a chemical element, a heavy, colorless, noble gas",
+    "pos": "noun",
+    "origin": "from Greek 'xenos' meaning 'strange'",
+    "example": "Xenon is used in certain types of lighting."
+  },
+  {
+    "word": "yearn",
+    "meaning": "to have an intense feeling of longing for something",
+    "pos": "verb",
+    "origin": "from Old English 'geornan'",
+    "example": "She yearned for the peaceful days of her childhood."
+  },
+  {
+    "word": "zonal",
+    "meaning": "relating to or arranged in zones",
+    "pos": "adjective",
+    "origin": "from Greek 'zone' meaning 'belt'",
+    "example": "The garden has a zonal arrangement of different plant types."
+  }
+]

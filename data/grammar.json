@@ -1,0 +1,172 @@
+[
+  {
+    "formula": "Subject + have/has + been + present participle",
+    "description": "Present Perfect Continuous tense is used to describe an action that started in the past and continues into the present, or has just finished.",
+    "examples": [
+      "I have been studying English for three years.",
+      "She has been working here since 2020.",
+      "They have been waiting for the bus."
+    ],
+    "question": "Complete: I _____ been _____ for two hours.",
+    "answer": "have, waiting",
+    "options": [
+      "have, wait",
+      "has, waiting",
+      "have, waiting",
+      "had, waited"
+    ]
+  },
+  {
+    "formula": "Subject + will + have + past participle",
+    "description": "Future Perfect tense is used to describe an action that will be completed before a specific point in the future.",
+    "examples": [
+      "By next year, I will have graduated from university.",
+      "She will have finished the project by Friday.",
+      "They will have arrived by the time we get there."
+    ],
+    "question": "Complete: By tomorrow, she _____ _____ the report.",
+    "answer": "will, have finished",
+    "options": [
+      "will, finish",
+      "will, have finished",
+      "will, be finishing",
+      "would, have finished"
+    ]
+  },
+  {
+    "formula": "Subject + had + past participle",
+    "description": "Past Perfect tense is used to describe an action that was completed before another past action or time.",
+    "examples": [
+      "I had already eaten when she arrived.",
+      "They had left before the storm started.",
+      "She had studied English before moving to London."
+    ],
+    "question": "Complete: He _____ _____ the book before the movie came out.",
+    "answer": "had, read",
+    "options": [
+      "has, read",
+      "had, read",
+      "was, reading",
+      "will, read"
+    ]
+  },
+  {
+    "formula": "Subject + be + going to + base verb",
+    "description": "Future with 'going to' is used to express intentions, plans, or predictions based on present evidence.",
+    "examples": [
+      "I am going to study harder next semester.",
+      "It's going to rain later today.",
+      "They are going to visit Paris next summer."
+    ],
+    "question": "Complete: We _____ _____ _____ travel to Japan next year.",
+    "answer": "are, going, to",
+    "options": [
+      "are, going, to",
+      "will, go, to",
+      "have, gone, to",
+      "were, going, to"
+    ]
+  },
+  {
+    "formula": "Subject + should + base verb",
+    "description": "Modal verb 'should' is used to give advice, make recommendations, or express obligation.",
+    "examples": [
+      "You should exercise regularly for better health.",
+      "She should arrive early for the meeting.",
+      "They should study more to improve their grades."
+    ],
+    "question": "Complete: Students _____ _____ their homework on time.",
+    "answer": "should, complete",
+    "options": [
+      "should, complete",
+      "must, complete",
+      "can, complete",
+      "will, complete"
+    ]
+  },
+  {
+    "formula": "Subject + would + base verb",
+    "description": "Modal verb 'would' is used to express conditional statements, polite requests, or habitual past actions.",
+    "examples": [
+      "I would help you if I had more time.",
+      "Would you please close the window?",
+      "When I was young, I would play outside every day."
+    ],
+    "question": "Complete: If I _____ rich, I _____ travel the world.",
+    "answer": "were, would",
+    "options": [
+      "was, will",
+      "were, would",
+      "am, would",
+      "be, will"
+    ]
+  },
+  {
+    "formula": "Subject + could + base verb",
+    "description": "Modal verb 'could' is used to express possibility, ability in the past, or polite requests.",
+    "examples": [
+      "You could try calling her tomorrow.",
+      "When I was younger, I could run very fast.",
+      "Could you please pass me the salt?"
+    ],
+    "question": "Complete: I _____ _____ swim when I was five years old.",
+    "answer": "could, already",
+    "options": [
+      "can, already",
+      "could, already",
+      "will, already",
+      "should, already"
+    ]
+  },
+  {
+    "formula": "Subject + must + base verb",
+    "description": "Modal verb 'must' is used to express necessity, obligation, or strong probability.",
+    "examples": [
+      "You must finish your homework before watching TV.",
+      "She must be tired after such a long day.",
+      "Students must arrive on time for the exam."
+    ],
+    "question": "Complete: You _____ _____ your seatbelt while driving.",
+    "answer": "must, wear",
+    "options": [
+      "must, wear",
+      "should, wear",
+      "can, wear",
+      "will, wear"
+    ]
+  },
+  {
+    "formula": "Subject + be + used to + noun/gerund",
+    "description": "'Be used to' expresses familiarity or habit with something. It means something is normal or familiar.",
+    "examples": [
+      "I am used to waking up early.",
+      "She is used to the cold weather.",
+      "They are used to working long hours."
+    ],
+    "question": "Complete: He _____ _____ _____ living in the city now.",
+    "answer": "is, used, to",
+    "options": [
+      "is, used, to",
+      "was, use, to",
+      "will, used, to",
+      "has, use, to"
+    ]
+  },
+  {
+    "formula": "Subject + used to + base verb",
+    "description": "'Used to' expresses a past habit or state that no longer exists.",
+    "examples": [
+      "I used to play piano when I was younger.",
+      "She used to live in Paris.",
+      "They used to go to the beach every summer."
+    ],
+    "question": "Complete: We _____ _____ go camping every summer.",
+    "answer": "used, to",
+    "options": [
+      "use, to",
+      "used, to",
+      "are, used, to",
+      "will, use, to"
+    ]
+  }
+]
