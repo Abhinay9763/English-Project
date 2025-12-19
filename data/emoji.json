@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "emojis": [
+            "🔥",
+            "🥔"
+        ],
+        "answer": "Hot Potato",
+        "hint": "A controversial issue or situation that is awkward or unpleasant to deal with."
+    },
+    {
+        "id": 2,
+        "emojis": [
+            "🧊",
+            "🔨"
+        ],
+        "answer": "Ice Breaker",
+        "hint": "Something done or said to get through the first difficulties in starting a conversation or discussion."
+    },
+    {
+        "id": 3,
+        "emojis": [
+            "🕰️",
+            "💣"
+        ],
+        "answer": "Time Bomb",
+        "hint": "A problematic situation that will eventually become dangerous or destructive."
+    },
+    {
+        "id": 4,
+        "emojis": [
+            "🌙",
+            "🚶"
+        ],
+        "answer": "Moonwalk",
+        "hint": "A dance move popularized by Michael Jackson."
+    },
+    {
+        "id": 5,
+        "emojis": [
+            "⭐",
+            "🐟"
+        ],
+        "answer": "Starfish",
+        "hint": "A marine echinoderm with five or more radiating arms."
+    },
+    {
+        "id": 6,
+        "emojis": [
+            "🧠",
+            "⛈️"
+        ],
+        "answer": "Brainstorm",
+        "hint": "A group discussion to produce ideas or solve problems."
+    },
+    {
+        "id": 7,
+        "emojis": [
+            "🛋️",
+            "🥔"
+        ],
+        "answer": "Couch Potato",
+        "hint": "A person who takes little or no exercise and watches a lot of television."
+    },
+    {
+        "id": 8,
+        "emojis": [
+            "🐷",
+            "🏦"
+        ],
+        "answer": "Piggy Bank",
+        "hint": "A container used mainly by children to store coins."
+    },
+    {
+        "id": 9,
+        "emojis": [
+            "🌃",
+            "🦉"
+        ],
+        "answer": "Night Owl",
+        "hint": "A person who is habitually active or wakeful at night."
+    },
+    {
+        "id": 10,
+        "emojis": [
+            "📖",
+            "🐛"
+        ],
+        "answer": "Bookworm",
+        "hint": "A person who enjoys reading."
+    },
+    {
+        "id": 11,
+        "emojis": [
+            "🗣️",
+            "🦋"
+        ],
+        "answer": "Social Butterfly",
+        "hint": "Someone who is social and meets many people."
+    },
+    {
+        "id": 12,
+        "emojis": [
+            "1️⃣",
+            "🐺"
+        ],
+        "answer": "Lone Wolf",
+        "hint": "A person who prefers to act or be alone."
+    },
+    {
+        "id": 13,
+        "emojis": [
+            "📝",
+            "🐱"
+        ],
+        "answer": "Copycat",
+        "hint": "A person who copies another's behavior, dress, or ideas."
+    },
+    {
+        "id": 14,
+        "emojis": [
+            "🥶",
+            "🦶"
+        ],
+        "answer": "Cold Feet",
+        "hint": "Loss of nerve or confidence."
+    },
+    {
+        "id": 15,
+        "emojis": [
+            "🍬",
+            "🦷"
+        ],
+        "answer": "Sweet Tooth",
+        "hint": "A great liking for sweet-tasting foods."
+    },
+    {
+        "id": 16,
+        "emojis": [
+            "🦵",
+            "🔨"
+        ],
+        "answer": "Break a Leg",
+        "hint": "Good luck (theatrical)."
+    },
+    {
+        "id": 17,
+        "emojis": [
+            "🫗",
+            "🫘"
+        ],
+        "answer": "Spill the Beans",
+        "hint": "Reveal secret information unintentionally or indiscreetly."
+    },
+    {
+        "id": 18,
+        "emojis": [
+            "🐱",
+            "💤"
+        ],
+        "answer": "Cat Nap",
+        "hint": "A short sleep, usually during the day."
+    },
+    {
+        "id": 19,
+        "emojis": [
+            "🛣️",
+            "😡"
+        ],
+        "answer": "Road Rage",
+        "hint": "Violent anger caused by the stress and frustration involved in driving."
+    },
+    {
+        "id": 20,
+        "emojis": [
+            "🟢",
+            "👍"
+        ],
+        "answer": "Green Thumb",
+        "hint": "Natural talent for growing plants."
+    },
+    {
+        "id": 21,
+        "emojis": [
+            "🃏",
+            "😐"
+        ],
+        "answer": "Poker Face",
+        "hint": "An impassive expression that hides one's true feelings."
+    },
+    {
+        "id": 22,
+        "emojis": [
+            "🐒",
+            "💼"
+        ],
+        "answer": "Monkey Business",
+        "hint": "Mischievous or deceitful behavior."
+    },
+    {
+        "id": 23,
+        "emojis": [
+            "👻",
+            "🏘️"
+        ],
+        "answer": "Ghost Town",
+        "hint": "A deserted town with few or no remaining inhabitants."
+    },
+    {
+        "id": 24,
+        "emojis": [
+            "❤️",
+            "📝"
+        ],
+        "answer": "Love Letter",
+        "hint": "A romantic letter."
+    },
+    {
+        "id": 25,
+        "emojis": [
+            "🖊️",
+            "👯"
+        ],
+        "answer": "Pen Pal",
+        "hint": "A friend you exchange letters with."
+    }
+]

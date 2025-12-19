@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { UserProvider } from "@/components/UserContext";
+import LoginModal from "@/components/LoginModal";
+import UserBadge from "@/components/UserBadge";
 
 export const metadata: Metadata = {
-  title: "Linguadash - English Micro-Learning",
-  description: "A simple English micro-learning game with Word of the Day, Idiom of the Day, and Grammar Formula",
+  title: "Linguadash - SMEC Project Expo",
+  description: "English Micro-Learning Project by St. Martin's Engineering College",
 };
 
 export default function RootLayout({
@@ -13,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <UserProvider>
+          <LoginModal />
+          <UserBadge />
+          {children}
+        </UserProvider>
+      </body>
     </html>
   );
 }

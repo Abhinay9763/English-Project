@@ -6,6 +6,8 @@ import WordleGrid from "@/components/WordleGrid";
 import Keyboard from "@/components/Keyboard";
 import HintBox from "@/components/HintBox";
 import wordsData from "@/data/word.json";
+import { useUser } from "@/components/UserContext";
+import confetti from "canvas-confetti";
 
 type WordData = {
   word: string;
@@ -18,6 +20,7 @@ type WordData = {
 export default function WordPage() {
   // Randomly select a word on client-side only to avoid hydration errors
   const [wordData, setWordData] = useState<WordData | null>(null);
+  const { addPoints } = useUser();
 
   const getRandomWord = () => {
     const words = wordsData as Array<WordData>;
@@ -81,7 +84,7 @@ export default function WordPage() {
 
   const handleKeyPress = useCallback((key: string) => {
     if (gameState !== "playing") return;
-    
+
     setCurrentGuess((prev) => {
       if (prev.length < targetWord.length) {
         return prev + key;
@@ -97,7 +100,7 @@ export default function WordPage() {
 
   const handleEnter = useCallback(() => {
     if (gameState !== "playing" || !targetWord) return;
-    
+
     setCurrentGuess((current) => {
       if (current.length !== targetWord.length) {
         return current;
@@ -109,6 +112,12 @@ export default function WordPage() {
 
       if (current.toLowerCase() === targetWord) {
         setGameState("won");
+        addPoints(10);
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
       } else {
         // Remove one hint for wrong guess
         setVisibleHints((prev) => {
@@ -149,7 +158,7 @@ export default function WordPage() {
     <main className="min-h-screen p-4 md:p-8 relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 rainbow-gradient opacity-10 blur-3xl"></div>
-      
+
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="mb-8">
           <Link
@@ -174,7 +183,7 @@ export default function WordPage() {
         ) : gameState === "playing" ? (
           <div className="space-y-6">
             <HintBox hints={hints} visibleHints={visibleHints} />
-            
+
             <div className="glass-effect rounded-2xl p-6 shadow-2xl border border-purple-500/30">
               <WordleGrid
                 guesses={guesses}
@@ -198,16 +207,14 @@ export default function WordPage() {
         ) : (
           <div className="glass-effect rounded-2xl p-8 shadow-2xl border border-pink-500/30 animate-pulse-glow">
             <div className="text-center mb-6">
-              <h2 className={`text-4xl font-black mb-2 ${
-                gameState === "won" 
-                  ? "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400" 
-                  : "text-white"
-              }`}>
+              <h2 className={`text-4xl font-black mb-2 ${gameState === "won"
+                ? "text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400"
+                : "text-white"
+                }`}>
                 {gameState === "won" ? "🎉 Congratulations!" : "😔 Game Over"}
               </h2>
-              <p className={`text-lg font-semibold ${
-                gameState === "won" ? "text-gray-300" : "text-gray-400"
-              }`}>
+              <p className={`text-lg font-semibold ${gameState === "won" ? "text-gray-300" : "text-gray-400"
+                }`}>
                 {gameState === "won"
                   ? "You guessed the word correctly!"
                   : `The word was: ${targetWord.toUpperCase()}`}
