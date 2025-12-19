@@ -9,9 +9,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Name is required' }, { status: 400 });
         }
 
-        // Fetch current users from KV
-        let users: any[] = await kv.get('leaderboard') || [];
-
+        const users = await kv.get<any[]>('users') || [];
         const existingUser = users.find((u: any) => u.name.toLowerCase() === name.toLowerCase());
 
         if (existingUser) {
@@ -21,8 +19,7 @@ export async function POST(request: Request) {
         const newUser = { name, score: 0 };
         users.push(newUser);
 
-        // Save updated users back to KV
-        await kv.set('leaderboard', users);
+        await kv.set('users', users);
 
         return NextResponse.json(newUser);
     } catch (error) {

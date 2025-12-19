@@ -9,20 +9,16 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
         }
 
-        // Fetch current users from KV
-        let users: any[] = await kv.get('leaderboard') || [];
-
+        const users = await kv.get<any[]>('users') || [];
         const userIndex = users.findIndex((u: any) => u.name.toLowerCase() === name.toLowerCase());
 
         if (userIndex === -1) {
             return NextResponse.json({ error: 'User not found' }, { status: 404 });
         }
 
-        // Update score
         users[userIndex].score += points;
 
-        // Save updated users back to KV
-        await kv.set('leaderboard', users);
+        await kv.set('users', users);
 
         return NextResponse.json(users[userIndex]);
     } catch (error) {

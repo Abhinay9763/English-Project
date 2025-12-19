@@ -1,12 +1,13 @@
 import { NextResponse } from 'next/server';
 import { kv } from '@vercel/kv';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
     try {
-        // Fetch current users from KV
-        const users: any[] = await kv.get('leaderboard') || [];
+        const users = await kv.get<any[]>('users') || [];
 
-        // Sort by score descending and take top 10
+        // Sort by score descending
         const leaderboard = users.sort((a: any, b: any) => b.score - a.score).slice(0, 10);
 
         return NextResponse.json(leaderboard);
