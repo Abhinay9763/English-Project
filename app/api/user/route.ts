@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
-import { kv } from '@vercel/kv';
+import fs from 'fs';
+import path from 'path';
+
+const dataFilePath = path.join(process.cwd(), 'data', 'leaderboard.json');
 
 export async function POST(request: Request) {
     try {
@@ -9,8 +12,11 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Name is required' }, { status: 400 });
         }
 
-        // Get users from KV, default to empty array if none exist
-        let users: any[] = await kv.get('users') || [];
+        let users = [];
+        if (fs.existsSync(dataFilePath)) {
+            const fileData = fs.readFileSync(dataFilePath, 'utf8');
+            users = JSON.parse(fileData);
+        }
 
         const existingUser = users.find((u: any) => u.name.toLowerCase() === name.toLowerCase());
 
@@ -21,12 +27,10 @@ export async function POST(request: Request) {
         const newUser = { name, score: 0 };
         users.push(newUser);
 
-        // Save back to KV
-        await kv.set('users', users);
+        fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2));
 
         return NextResponse.json(newUser);
     } catch (error) {
-        console.error('KV Error:', error);
         return NextResponse.json({ error: 'Failed to process user' }, { status: 500 });
     }
 }
