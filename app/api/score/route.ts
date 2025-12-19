@@ -1,8 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-const dataFilePath = path.join(process.cwd(), 'data', 'leaderboard.json');
+import { kv } from '@vercel/kv';
 
 export async function POST(request: Request) {
     try {
@@ -12,11 +9,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Invalid input' }, { status: 400 });
         }
 
-        let users = [];
-        if (fs.existsSync(dataFilePath)) {
-            const fileData = fs.readFileSync(dataFilePath, 'utf8');
-            users = JSON.parse(fileData);
-        }
+        let users: any[] = await kv.get('users') || [];
 
         const userIndex = users.findIndex((u: any) => u.name.toLowerCase() === name.toLowerCase());
 
@@ -26,10 +19,11 @@ export async function POST(request: Request) {
 
         users[userIndex].score += points;
 
-        fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2));
+        await kv.set('users', users);
 
         return NextResponse.json(users[userIndex]);
     } catch (error) {
+        console.error('KV Error:', error);
         return NextResponse.json({ error: 'Failed to update score' }, { status: 500 });
     }
 }
