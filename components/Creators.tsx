@@ -16,7 +16,7 @@ export default function Creators() {
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-cyan-500/50"></div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                 {members.map((member, idx) => (
                     <div
                         key={idx}
@@ -33,6 +33,29 @@ export default function Creators() {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            {/* Mentor Section */}
+            <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center gap-4 mb-8">
+                    <div className="h-px w-8 bg-gradient-to-r from-transparent to-yellow-500/50"></div>
+                    <h3 className="text-lg md:text-xl font-bold text-yellow-500/80 uppercase tracking-[0.3em]">
+                        Guided By
+                    </h3>
+                    <div className="h-px w-8 bg-gradient-to-l from-transparent to-yellow-500/50"></div>
+                </div>
+
+                <div className="group relative max-w-sm w-full transition-all duration-500 hover:scale-105">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-600 rounded-2xl opacity-20 group-hover:opacity-40 blur-lg transition duration-500"></div>
+                    <div className="relative glass-effect p-8 rounded-2xl border border-yellow-500/20 text-center shadow-[0_0_40px_rgba(234,179,8,0.1)]">
+                        <div className="text-2xl md:text-3xl font-black text-white mb-2 tracking-tight">
+                            Mr. G. Laxmikanth
+                        </div>
+                        <div className="inline-block px-4 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500 text-xs font-bold uppercase tracking-widest">
+                            Project Mentor
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
