@@ -13,6 +13,7 @@ interface UserContextType {
     addPoints: (points: number) => Promise<void>;
     updateUserScore: (score: number) => void;
     logout: () => void;
+    rank: number | null;
     loading: boolean;
 }
 
@@ -20,6 +21,7 @@ const UserContext = createContext<UserContextType | undefined>(undefined);
 
 export function UserProvider({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<User | null>(null);
+    const [rank, setRank] = useState<number | null>(null);
     const [loading, setLoading] = useState(true);
 
     // Load from local storage on mount
@@ -32,6 +34,27 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
             setLoading(false);
         }
     }, []);
+
+    const fetchRank = async (name: string) => {
+        try {
+            const res = await fetch("/api/leaderboard");
+            const data: User[] = await res.json();
+            const userRank = data.findIndex(u => u.name.toLowerCase() === name.toLowerCase()) + 1;
+            setRank(userRank > 0 ? userRank : null);
+        } catch (error) {
+            console.error("Failed to fetch rank:", error);
+        }
+    };
+
+    useEffect(() => {
+        if (user) {
+            fetchRank(user.name);
+            const interval = setInterval(() => fetchRank(user.name), 3000);
+            return () => clearInterval(interval);
+        } else {
+            setRank(null);
+        }
+    }, [user?.name, user?.score]);
 
     const login = async (name: string) => {
         try {
@@ -82,7 +105,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     };
 
     return (
-        <UserContext.Provider value={{ user, login, addPoints, updateUserScore, logout, loading }}>
+        <UserContext.Provider value={{ user, login, addPoints, updateUserScore, logout, rank, loading }}>
             {children}
         </UserContext.Provider>
     );

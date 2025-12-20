@@ -24,8 +24,8 @@ export default function Leaderboard() {
 
     useEffect(() => {
         fetchLeaderboard();
-        // Refresh every 10 seconds
-        const interval = setInterval(fetchLeaderboard, 10000);
+        // Refresh every 3 seconds for a more real-time feel
+        const interval = setInterval(fetchLeaderboard, 3000);
         return () => clearInterval(interval);
     }, [user?.score]); // Refresh when user's score changes too
 
@@ -40,19 +40,19 @@ export default function Leaderboard() {
                     <div
                         key={entry.name}
                         className={`flex items-center justify-between p-3 rounded-xl transition-all ${entry.name === user?.name
-                                ? "bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30"
-                                : "bg-white/5 hover:bg-white/10"
+                            ? "bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30"
+                            : "bg-white/5 hover:bg-white/10"
                             }`}
                     >
                         <div className="flex items-center gap-3">
                             <span
                                 className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${index === 0
-                                        ? "bg-yellow-400 text-yellow-900"
-                                        : index === 1
-                                            ? "bg-gray-300 text-gray-900"
-                                            : index === 2
-                                                ? "bg-orange-400 text-orange-900"
-                                                : "bg-white/10 text-gray-400"
+                                    ? "bg-yellow-400 text-yellow-900"
+                                    : index === 1
+                                        ? "bg-gray-300 text-gray-900"
+                                        : index === 2
+                                            ? "bg-orange-400 text-orange-900"
+                                            : "bg-white/10 text-gray-400"
                                     }`}
                             >
                                 {index + 1}

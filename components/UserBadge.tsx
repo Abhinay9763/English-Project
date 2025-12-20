@@ -3,7 +3,7 @@
 import { useUser } from "./UserContext";
 
 export default function UserBadge() {
-    const { user, logout } = useUser();
+    const { user, logout, rank } = useUser();
 
     if (!user) return null;
 
@@ -17,11 +17,19 @@ export default function UserBadge() {
                     </span>
                 </div>
 
-                <div className="flex items-center gap-1.5 px-3 py-1 bg-yellow-500/10 rounded-lg border border-yellow-500/20 shadow-[0_0_15px_rgba(234,179,8,0.1)] transition-all duration-300">
-                    <span className="text-lg">💰</span>
-                    <span className="text-yellow-400 font-black text-sm tabular-nums">
-                        {user.score} <span className="text-[10px] uppercase tracking-tighter opacity-70">pts</span>
-                    </span>
+                <div className="flex items-center gap-2">
+                    {rank && (
+                        <div className="px-2.5 py-1 bg-blue-500/10 rounded-lg border border-blue-500/20 text-blue-400 font-bold text-xs">
+                            #{rank}
+                        </div>
+                    )}
+
+                    <div className="flex items-center gap-1.5 px-3 py-1 bg-yellow-500/10 rounded-lg border border-yellow-500/20 shadow-[0_0_15px_rgba(234,179,8,0.1)] transition-all duration-300">
+                        <span className="text-lg">💰</span>
+                        <span className="text-yellow-400 font-black text-sm tabular-nums">
+                            {user.score} <span className="text-[10px] uppercase tracking-tighter opacity-70">pts</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <button
