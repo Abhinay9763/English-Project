@@ -9,11 +9,20 @@ export default function UserBadge() {
 
     return (
         <div className="fixed top-6 right-6 z-50 flex items-center gap-4 glass-effect px-4 py-2 rounded-full border border-white/10 shadow-xl animate-fade-in">
-            <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span className="text-gray-300 text-sm font-medium">
-                    Playing as <span className="text-white font-bold">{user.name}</span>
-                </span>
+            <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <span className="text-gray-300 text-sm font-medium">
+                        <span className="text-white font-bold">{user.name}</span>
+                    </span>
+                </div>
+
+                <div className="flex items-center gap-1.5 px-3 py-1 bg-yellow-500/10 rounded-lg border border-yellow-500/20 shadow-[0_0_15px_rgba(234,179,8,0.1)] transition-all duration-300">
+                    <span className="text-lg">💰</span>
+                    <span className="text-yellow-400 font-black text-sm tabular-nums">
+                        {user.score} <span className="text-[10px] uppercase tracking-tighter opacity-70">pts</span>
+                    </span>
+                </div>
             </div>
             <button
                 onClick={logout}
